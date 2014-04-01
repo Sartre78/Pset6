@@ -1,0 +1,39 @@
+0.  What is pneumonoultramicroscopicsilicovolcanoconiosis?
+    
+    According to Merriam-Webster's Medical Dictionary,
+    pneumonoultramicroscopicsilicovolcanoconiosis is a
+    pneumoconiosis caused by inhalation of very fine
+    silicate or quartz dust.
+    
+    It is being used in this problem set to define the 
+    longest word in the dictionary.
+    
+    This is not quite as long as the last name of the 
+    forgotten Baroque Composer: 
+    Johann Gambolputty de von Ausfernschplendenschlitter-
+    crasscrenbonfrieddiggerdingledangledongledungleburstein- 
+    vonknackerthrasherapplebangerhorowitzticolensicgrander- 
+    knottyspelltinklegrandlichgrumblemeyerspelterwasser- 
+    kurstlichhimbleeisenbahnwagengutenabendbitteeinnürnburger- 
+    bratwustlegerspurtenmitzweimacheluberhundsfutgumberaber-
+    shönedankerkalbsfleischmittleraucher von Hautkopft of Ulm
+    (per Monty Python).
+    
+1.  According to its man page, what does getrusage do?
+    
+    getrusage returns usage data based on one of three
+    possible int who's (RUSAGE_SELF, RUSAGE_CHILDREN,
+    RUSAGE_THREAD), based on the struct rusage.
+
+2.  Per that same man page, how many members are in a variable of type struct rusage?
+    
+    16 (although not all are required to be filled - kernel will set to zero).
+    
+3.  TODO
+4.  TODO
+5.  TODO
+6.  TODO
+7.  TODO
+8.  TODO
+9.  TODO
+10. TODO
