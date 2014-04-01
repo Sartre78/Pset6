@@ -29,7 +29,10 @@
     
     16 (although not all are required to be filled - kernel will set to zero).
     
-3.  TODO
+3.  Why do you think we pass before and after by reference 
+    (instead of by value) to calculate, even though we’re not
+    changing their contents?
+    
 4.  TODO
 5.  TODO
 6.  TODO
