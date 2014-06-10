@@ -70,7 +70,7 @@ int main(int argc, char* argv[])
 
     // prepare to spell-check
     int index = 0, misspellings = 0, words = 0;
-    char word[LENGTH+1];
+     char word[LENGTH+1];
 
     // spell-check each word in text
     for (int c = fgetc(fp); c != EOF; c = fgetc(fp))
