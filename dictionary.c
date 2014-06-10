@@ -21,8 +21,8 @@ bool check(const char* word)
 {
     // TODO
     // allocate memory for a string that will contain the adulterated word
-    char* changed = malloc((strlen(word) + 1) * sizeof(char));
-    if (changed == NULL) {return false;} // check for NULL
+    changed = malloc((strlen(word) + 1) * sizeof(char));
+    if (changed == NULL) {free(changed); return false;} // check for NULL
     
     // convert word to lowercase to compare it to the all lower-care dictionary
     for (int i = 0, n = strlen(word); i < n; i++) {changed[i] = tolower(word[i]);}
@@ -48,7 +48,6 @@ bool check(const char* word)
  */
 bool load(const char* dictionary)
 {
-    // TODO
     // Open dictionary (for the purpose of counting total words)   
     FILE* fp = fopen(dictionary, "r");
     if (fp == NULL) {printf("Could not open dictionary.\n"); return false;}
@@ -129,7 +128,6 @@ unsigned int size(void)
  */
 bool unload(void)
 {
-    // TODO
     // free every "i"th spot of the table
     for (int i = 0; i <= 25; i++) 
     {
@@ -141,10 +139,10 @@ bool unload(void)
             node* temp = cursor; 
             cursor = cursor->next; 
             free(temp);
-        }
-        if (cursor == NULL) {return true;}
+        }        
     }
-    return false;
+    free(changed);
+    return true;
 }
 // HASH FUNCTION: hash on first letter of string
 int hash (char* string) {int h = toupper(string[0]) - 'A'; return h % 26;}

@@ -32,7 +32,8 @@ node;
 
 // define dictionary word counter integer.
 int words;
-    
+char* changed;
+
 /**
  * Returns true if word is in dictionary else false.
  */
